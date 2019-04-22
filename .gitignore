@@ -1,0 +1,9 @@
+boxes/
+boxes.bak/
+dropbox/
+images/
+records_cropped/
+thumbs/
+.env/
+seattlecitysellers-cloud.json
+server/__pycache__/
