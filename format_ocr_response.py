@@ -57,7 +57,7 @@ parsed = image_annotator_pb2.AnnotateImageResponse()
 # make sql table
 #import psycopg2
 #
-#connect_str = "dbname='vinyl' user='patrick' host='localhost' password='asdfasdf'"
+#connect_str = "dbname='vinyl' user='patrick' host='localhost' password=''"
 #conn = psycopg2.connect(connect_str)
 #cur = conn.cursor()
 #cur.execute("""CREATE TABLE records (

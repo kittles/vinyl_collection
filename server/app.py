@@ -10,10 +10,11 @@ number of results that would always fit on the page
 import psycopg2                                                                                                                                                                                                    
 from flask import Flask
 from flask import jsonify
+import os
 
 app = Flask(__name__, static_url_path='/static')
                                                                                                                                                                                                                    
-connect_str = "dbname='vinyl' user='patrick' host='localhost' password='asdfasdf'"                                                                                                                                 
+connect_str = "dbname='vinyl' user='patrick' host='localhost' password='{}'".format(os.environ['POSTGRESQL_PASSWORD'])
 conn = psycopg2.connect(connect_str)                                                                                                                                                                               
 cur = conn.cursor()                                                                                                                                                                                                
 
